@@ -19,7 +19,7 @@ for job in jobs:
   company_soup = BeautifulSoup(company_website.text, "html.parser")
 
   informations = company_soup.find("div", {"id" : "NormalInfo"}).find("table").find("tbody").find_all("tr")
-  file = open(f'{name}.csv', mode="w", encoding='UTF-8')
+  file = open(f'{name}.csv(csv_files)', mode="w", encoding='UTF-8')
   writer = csv.writer(file)
 
   writer.writerow(["place", "title", "time", "pay", "date"])
