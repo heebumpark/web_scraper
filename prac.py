@@ -1,5 +1,3 @@
-lst = []
-v1 = 'hh'
-v2 = 'hekqw'
-lst.append(v1+v2)
-print(lst)
+lst_a = [1,2,3,4,5,6,7,8,9,10]
+
+print(lst_a[::-2])
